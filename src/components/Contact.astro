@@ -1,7 +1,7 @@
 ---
 ---
 
-<section id="contacto" class="section-hotwheels bg-gray-900">
+<section id="contacto" class="section-hotwheels">
   <div class="container-hotwheels">
     <!-- Section Header -->
     <div class="text-center mb-16">
@@ -18,101 +18,6 @@
     </div>
 
     <div class="grid lg:grid-cols-2 gap-16 mb-20">
-      <!-- Contact Form -->
-      <div class="order-2 lg:order-1">
-        <div class="card-hotwheels p-8">
-          <h3 class="font-hotwheels text-2xl font-bold text-white mb-6">
-            Envíanos un mensaje
-          </h3>
-          <form class="space-y-6" id="contact-form">
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="block text-sm font-semibold text-gray-300 mb-2">
-                  Nombre *
-                </label>
-                <input 
-                  type="text" 
-                  required
-                  class="w-full px-4 py-3 border-2 border-gray-600 bg-gray-700 text-white rounded-lg focus:border-orange-400 focus:outline-none transition-colors duration-200"
-                  placeholder="Tu nombre completo"
-                >
-              </div>
-              <div>
-                <label class="block text-sm font-semibold text-gray-300 mb-2">
-                  Email *
-                </label>
-                <input 
-                  type="email" 
-                  required
-                  class="w-full px-4 py-3 border-2 border-gray-600 bg-gray-700 text-white rounded-lg focus:border-orange-400 focus:outline-none transition-colors duration-200"
-                  placeholder="tu@email.com"
-                >
-              </div>
-            </div>
-            
-            <div>
-              <label class="block text-sm font-semibold text-gray-300 mb-2">
-                Teléfono
-              </label>
-              <input 
-                type="tel"
-                class="w-full px-4 py-3 border-2 border-gray-600 bg-gray-700 text-white rounded-lg focus:border-orange-400 focus:outline-none transition-colors duration-200"
-                placeholder="+1 (555) 123-4567"
-              >
-            </div>
-
-            <div>
-              <label class="block text-sm font-semibold text-gray-300 mb-2">
-                Tipo de Consulta *
-              </label>
-              <select 
-                required
-                class="w-full px-4 py-3 border-2 border-gray-600 bg-gray-700 text-white rounded-lg focus:border-orange-400 focus:outline-none transition-colors duration-200"
-              >
-                <option value="">Selecciona una opción</option>
-                <option value="compra">Compra de HotWheels</option>
-                <option value="custom">Solicitud Custom</option>
-                <option value="restauracion">Restauración</option>
-                <option value="consulta">Consulta General</option>
-                <option value="otro">Otro</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="block text-sm font-semibold text-gray-300 mb-2">
-                Mensaje *
-              </label>
-              <textarea 
-                rows="5" 
-                required
-                class="w-full px-4 py-3 border-2 border-gray-600 bg-gray-700 text-white rounded-lg focus:border-orange-400 focus:outline-none transition-colors duration-200 resize-none"
-                placeholder="Cuéntanos qué necesitas. Si es un custom, describe el carro que quieres replicar..."
-              ></textarea>
-            </div>
-
-            <div>
-              <label class="flex items-center space-x-3">
-                <input 
-                  type="checkbox" 
-                  required
-                  class="w-5 h-5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500"
-                >
-                <span class="text-sm text-gray-600">
-                  Acepto los <a href="#" class="text-orange-500 hover:underline">términos y condiciones</a> y autorizo el uso de mis datos para responder mi consulta.
-                </span>
-              </label>
-            </div>
-
-            <button 
-              type="submit"
-              class="btn-hotwheels w-full py-4 text-lg font-bold"
-            >
-              🚀 Enviar Mensaje
-            </button>
-          </form>
-        </div>
-      </div>
-
       <!-- Contact Information -->
       <div class="order-1 lg:order-2">
         <div class="space-y-8">
@@ -128,19 +33,6 @@
             <button class="bg-white text-orange-500 font-bold py-3 px-6 rounded-lg hover:bg-yellow-300 hover:text-orange-600 transition-all duration-200 transform hover:scale-105 w-full">
               +1 (555) 123-4567
             </button>
-          </div>
-
-          <div class="card-hotwheels p-6">
-            <div class="flex items-center space-x-4 mb-4">
-              <div class="text-3xl">📧</div>
-              <div>
-                <h4 class="font-hotwheels text-xl font-bold text-gray-900">Email</h4>
-                <p class="text-gray-600">Respuesta en 24h</p>
-              </div>
-            </div>
-            <a href="mailto:info@garagehotwheels.com" class="btn-hotwheels-secondary w-full text-center block py-3">
-              info@garagehotwheels.com
-            </a>
           </div>
 
           <div class="card-hotwheels p-6">
@@ -170,15 +62,11 @@
             <div class="space-y-2 text-gray-300">
               <div class="flex justify-between">
                 <span>Lunes - Viernes:</span>
-                <span class="font-semibold">9:00 AM - 7:00 PM</span>
+                <span class="font-semibold">11:00 AM - 7:00 PM</span>
               </div>
               <div class="flex justify-between">
-                <span>Sábados:</span>
+                <span>Sábados y Domingos:</span>
                 <span class="font-semibold">10:00 AM - 6:00 PM</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Domingos:</span>
-                <span class="font-semibold">12:00 PM - 5:00 PM</span>
               </div>
             </div>
           </div>
@@ -189,17 +77,21 @@
               Síguenos en redes sociales
             </h4>
             <div class="grid grid-cols-2 gap-4">
-              <a href="#" class="bg-blue-500 text-white py-3 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-200 text-center font-semibold">
-                📘 Facebook
+              <a href="#" class="bg-blue-500 text-white py-3 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-200 text-center font-semibold flex items-center justify-center gap-2">
+                <img src="/ic_facebook.png" alt="Facebook" class="w-5 h-5">
+                Facebook
               </a>
-              <a href="#" class="bg-pink-500 text-white py-3 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-200 text-center font-semibold">
-                📷 Instagram
+              <a href="#" class="bg-pink-500 text-white py-3 px-4 rounded-lg hover:bg-pink-600 transition-colors duration-200 text-center font-semibold flex items-center justify-center gap-2">
+                <img src="/ic_instagram.png" alt="Instagram" class="w-5 h-5">
+                Instagram
               </a>
-              <a href="#" class="bg-red-500 text-white py-3 px-4 rounded-lg hover:bg-red-600 transition-colors duration-200 text-center font-semibold">
-                🎥 YouTube
+              <a href="#" class="bg-red-500 text-white py-3 px-4 rounded-lg hover:bg-red-600 transition-colors duration-200 text-center font-semibold flex items-center justify-center gap-2">
+                <img src="/ic_youtube.png" alt="YouTube" class="w-5 h-5">
+                YouTube
               </a>
-              <a href="#" class="bg-green-500 text-white py-3 px-4 rounded-lg hover:bg-green-600 transition-colors duration-200 text-center font-semibold">
-                🎵 TikTok
+              <a href="#" class="bg-green-500 text-white py-3 px-4 rounded-lg hover:bg-green-600 transition-colors duration-200 text-center font-semibold flex items-center justify-center gap-2">
+                <img src="/ic_tiktok.png" alt="TikTok" class="w-5 h-5">
+                TikTok
               </a>
             </div>
           </div>
@@ -271,7 +163,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white py-16">
+<footer class="text-white py-16">
   <div class="container-hotwheels">
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
       <!-- Brand -->
@@ -288,16 +180,16 @@
         </p>
         <div class="flex space-x-4">
           <a href="#" class="bg-orange-500 text-white p-3 rounded-lg hover:bg-orange-600 transition-colors duration-200">
-            📘
+            <img src="/ic_facebook.png" alt="Facebook" class="w-5 h-5">
           </a>
           <a href="#" class="bg-orange-500 text-white p-3 rounded-lg hover:bg-orange-600 transition-colors duration-200">
-            📷
+            <img src="/ic_instagram.png" alt="Instagram" class="w-5 h-5">
           </a>
           <a href="#" class="bg-orange-500 text-white p-3 rounded-lg hover:bg-orange-600 transition-colors duration-200">
-            🎥
+            <img src="/ic_youtube.png" alt="YouTube" class="w-5 h-5">
           </a>
           <a href="#" class="bg-orange-500 text-white p-3 rounded-lg hover:bg-orange-600 transition-colors duration-200">
-            💬
+            <img src="/ic_tiktok.png" alt="TikTok" class="w-5 h-5">
           </a>
         </div>
       </div>
@@ -889,95 +781,3 @@
     }
   }
 </style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('contact-form');
-    const submitBtn = form?.querySelector('.submit-btn');
-
-    // File upload handling
-    const fileInput = document.getElementById('carPhotos');
-    const fileUploadText = document.querySelector('.file-upload-text');
-
-    if (fileInput && fileUploadText) {
-      fileInput.addEventListener('change', (e) => {
-        const files = e.target.files;
-        if (files.length > 0) {
-          const fileNames = Array.from(files).map(file => file.name).join(', ');
-          fileUploadText.innerHTML = `
-            <span class="upload-icon">📁</span>
-            <span>${files.length} archivo(s) seleccionado(s)</span>
-          `;
-        }
-      });
-
-      // Drag and drop functionality
-      fileUploadText.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        fileUploadText.style.borderColor = 'var(--neon-blue)';
-        fileUploadText.style.color = 'var(--neon-blue)';
-      });
-
-      fileUploadText.addEventListener('dragleave', (e) => {
-        e.preventDefault();
-        fileUploadText.style.borderColor = 'var(--light-gray)';
-        fileUploadText.style.color = 'var(--light-gray)';
-      });
-
-      fileUploadText.addEventListener('drop', (e) => {
-        e.preventDefault();
-        fileInput.files = e.dataTransfer.files;
-        fileInput.dispatchEvent(new Event('change'));
-        fileUploadText.style.borderColor = 'var(--light-gray)';
-        fileUploadText.style.color = 'var(--light-gray)';
-      });
-    }
-
-    // Form submission
-    form?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      if (submitBtn) {
-        // Show loading state
-        submitBtn.classList.add('loading');
-        
-        // Simulate API call
-        setTimeout(() => {
-          submitBtn.classList.remove('loading');
-          submitBtn.classList.add('success');
-          
-          // Reset form after success
-          setTimeout(() => {
-            form.reset();
-            submitBtn.classList.remove('success');
-            
-            // Reset file upload text
-            if (fileUploadText) {
-              fileUploadText.innerHTML = `
-                <span class="upload-icon">📁</span>
-                <span>Arrastra fotos aquí o haz clic para seleccionar</span>
-              `;
-            }
-          }, 3000);
-        }, 2000);
-      }
-    });
-
-    // Directions button
-    document.querySelector('.directions-btn')?.addEventListener('click', () => {
-      // In a real app, this would open maps with directions
-      window.open('https://maps.google.com/directions/Tokyo+Shibuya', '_blank');
-    });
-
-    // Smooth scroll for footer links
-    document.querySelectorAll('.footer a[href^="#"]').forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  });
-</script>
