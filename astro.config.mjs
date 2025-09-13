@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/GarageHotwheels' : '/',
+  base: process.env.GITHUB_ACTIONS ? '/GarageHotwheels' : '/',
   vite: {
     plugins: [tailwindcss()]
   }
