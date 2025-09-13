@@ -5,7 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? '/GarageHotwheels' : '/',
+  site: 'https://ricarnicero.github.io',
+  base: 'GarageHotwheels',
   vite: {
     plugins: [tailwindcss()]
   }

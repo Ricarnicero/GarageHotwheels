@@ -20,21 +20,144 @@ import '../styles/global.css';
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/hotwheels-og.jpg" />
+    <meta property="og:url" content="https://garagehotwheels.com" />
+    <meta property="og:site_name" content="Garage HotWheels" />
+    <meta property="og:image" content="/GarageHotwheels/bmw_m3_custom.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="BMW M3 Custom HotWheels - Garage HotWheels" />
+    <meta property="og:locale" content="es_MX" />
+    
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content="/hotwheels-og.jpg" />
+    <meta name="twitter:image" content="/GarageHotwheels/bmw_m3_custom.png" />
+    <meta name="twitter:image:alt" content="BMW M3 Custom HotWheels - Garage HotWheels" />
+    <meta name="twitter:site" content="@GarageHotWheels" />
+    <meta name="twitter:creator" content="@GarageHotWheels" />
+
+    <!-- Extended Keywords -->
+    <meta name="keywords" content="HotWheels, carros colección, custom cars, réplicas, juguetes, autos, Tokyo Drift, Fast Furious, tuning personalizado, showroom premium, restauración clásicos, ediciones limitadas, Super Treasure Hunt, Red Line Series, Street Beasts, McLaren P1, Ferrari F40, BMW M3, Nissan GTR, Lamborghini Huracán, Supra Tokyo Drift, Mustang Boss 429, coleccionables, diecast cars, miniature cars, scale models, racing cars, sport cars, muscle cars, JDM cars, European cars, American cars, taller especializado, proyectos únicos, réplicas exactas, autos personalizados, garage profesional, colección exclusiva, autos de película, Fast and Furious cars, street racing, tuner cars, modificaciones, restauración vintage, certificado autenticidad, empaque premium, envío México, tienda online, venta HotWheels, comprar HotWheels México, HotWheels custom México, tuning HotWheels, garage especializado, coleccionistas México, autos miniatura, carros escala, diecast México, modelos a escala, Hot Wheels México, coches colección" />
     
-    <!-- Keywords -->
-    <meta name="keywords" content="HotWheels, carros colección, custom cars, réplicas, juguetes, autos, Tokyo Drift, Fast Furious" />
+    <!-- Author and Business Info -->
+    <meta name="author" content="Garage HotWheels" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <!-- Business Schema -->
+    <meta name="geo.region" content="MX" />
+    <meta name="geo.placename" content="México" />
+    <meta name="geo.position" content="19.4326;-99.1332" />
+    <meta name="ICBM" content="19.4326, -99.1332" />
+    
+    <!-- Content Classification -->
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="Spanish" />
+    <meta name="category" content="Automotive, Collectibles, Toys, Custom Services" />
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/GarageHotwheels/favicon.svg" />
     
     <!-- Preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Garage HotWheels",
+      "description": "Venta de carros HotWheels de colección y servicios custom para crear réplicas personalizadas de tu carro. Estilo Tokyo Drift, máxima calidad.",
+      "url": "https://garagehotwheels.com",
+      "telephone": "+52-55-6561-4899",
+      "email": "contacto@garagehotwheels.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MX",
+        "addressRegion": "CDMX",
+        "addressLocality": "Ciudad de México"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "19.4326",
+        "longitude": "-99.1332"
+      },
+      "openingHours": "Mo-Sa 09:00-20:00",
+      "priceRange": "$55-$1710 MXN",
+      "currenciesAccepted": "MXN",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, Transfer",
+      "category": ["Toy Store", "Collectibles", "Custom Services", "Automotive Accessories"],
+      "keywords": "HotWheels, carros colección, custom cars, réplicas, tuning personalizado, Tokyo Drift",
+      "image": [
+        "/GarageHotwheels/bmw_m3_custom.png",
+        "/GarageHotwheels/ferrari_f40.png",
+        "/GarageHotwheels/custom_supra.png"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catálogo Garage HotWheels",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "HotWheels Showroom Premium",
+              "description": "Autos exclusivos, ediciones limitadas y Treasure Hunts"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "55",
+              "maxPrice": "799",
+              "priceCurrency": "MXN"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tuning Personalizado",
+              "description": "Creamos una réplica exacta de tu auto real en formato HotWheels"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "950",
+              "maxPrice": "1710",
+              "priceCurrency": "MXN"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Restauración de Clásicos",
+              "description": "Restauración profesional de HotWheels vintage"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "380",
+              "maxPrice": "875", 
+              "priceCurrency": "MXN"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/GarageHotWheels",
+        "https://www.instagram.com/garagehotwheels",
+        "https://www.tiktok.com/@garagehotwheels",
+        "https://www.youtube.com/@garagehotwheels"
+      ]
+    }
+    </script>
     
     <title>{title}</title>
   </head>
