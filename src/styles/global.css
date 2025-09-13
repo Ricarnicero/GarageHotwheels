@@ -213,7 +213,7 @@
 
   /* HotWheels section padding */
   .section-hotwheels {
-    @apply py-16 lg:py-24;
+    @apply py-4 lg:py-8;
   }
 }
 

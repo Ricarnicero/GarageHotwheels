@@ -7,27 +7,27 @@ import CarCard from './CarCard.astro';
     <!-- Section Header -->
     <div class="text-center mb-16">
       <div class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
-        🎨 Nuestra Galería
+        🎨 Nuestro Showroom
       </div>
       <h2 class="font-hotwheels text-4xl lg:text-5xl font-bold text-white mb-6">
         Explora nuestra 
-        <span class="text-hotwheels-gradient">colección exclusiva</span>
+        <span class="text-hotwheels-gradient">colección exclusiva de autos</span>
       </h2>
       <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-        Desde ediciones limitadas hasta customs únicos, descubre la pasión por los HotWheels
+        Desde ediciones limitadas hasta proyectos de tuning únicos, descubre la pasión por los HotWheels y el motor
       </p>
     </div>
 
     <!-- Filter Buttons -->
     <div class="flex flex-wrap justify-center gap-4 mb-12">
       <button class="filter-btn active bg-orange-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105" data-filter="all">
-        Todos
+        Todos los Autos
       </button>
       <button class="filter-btn bg-gray-800 border-2 border-gray-600 text-gray-300 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:text-blue-400" data-filter="collection">
-        Colección
+        En Stock
       </button>
       <button class="filter-btn bg-gray-800 border-2 border-gray-600 text-gray-300 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:border-orange-500 hover:text-orange-400" data-filter="custom">
-        Custom
+        Tuning
       </button>
       <button class="filter-btn bg-gray-800 border-2 border-gray-600 text-gray-300 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:border-green-500 hover:text-green-400" data-filter="restoration">
         Restauración
@@ -41,15 +41,15 @@ import CarCard from './CarCard.astro';
         image="/ferrari_f40.png"
         title="Ferrari F40"
         series="Red Line Series"
-        price="$15.99"
+        price="$399 MXN"
         description="Edición limitada Red Line 2024. Perfecto estado de colección."
-        status="EN STOCK"
-        statusColor="bg-green-500"
+        status="AGOTADO"
+        statusColor="bg-red-500"
         priceColor="text-red-400"
         category="collection"
         categoryColor="bg-red-500"
-        categoryLabel="Colección"
-        buttonText="Agregar"
+        categoryLabel="Agotado"
+        buttonText="Al Garaje"
         buttonType="secondary"
         hoverButtonText="Ver Detalles"
       />
@@ -59,14 +59,14 @@ import CarCard from './CarCard.astro';
         image="/bmw_m3_custom.png"
         title="BMW M3 E46"
         series="Custom Replica"
-        price="$79.99"
-        description="Réplica exacta personalizada del carro real del cliente."
+        price="$1,499 MXN"
+        description="Réplica exacta personalizada del auto real del cliente."
         status="VENDIDO"
         statusColor="bg-orange-500"
-        priceColor="text-blue-400"
+        priceColor="text-orange-400"
         category="custom"
         categoryColor="bg-orange-500"
-        categoryLabel="Custom"
+        categoryLabel="Tuning"
         buttonText="Ordenar Similar"
         buttonType="primary"
         hoverButtonText="Ver Proceso"
@@ -77,15 +77,15 @@ import CarCard from './CarCard.astro';
         image="/NissanGTRNismo.png"
         title="Nissan GT-R Nismo"
         series="Street Beasts"
-        price="$8.99"
+        price="$249 MXN"
         description="Street Beasts Series 2023. Excelente calidad y detalles."
-        status="EN STOCK"
-        statusColor="bg-green-500"
-        priceColor="text-green-400"
+        status="AGOTADO"
+        statusColor="bg-red-500"
+        priceColor="text-red-400"
         category="collection"
-        categoryColor="bg-green-500"
-        categoryLabel="Colección"
-        buttonText="Agregar"
+        categoryColor="bg-red-500"
+        categoryLabel="Agotado"
+        buttonText="Al Garaje"
         buttonType="secondary"
         hoverButtonText="Ver Detalles"
       />
@@ -95,13 +95,13 @@ import CarCard from './CarCard.astro';
         image="/mustang_Boss.png"
         title="Mustang Boss 429"
         series="Restoration"
-        price="$45.99"
+        price="$875 MXN"
         description="Restauración completa de modelo vintage 1970."
         status="RESTAURADO"
-        statusColor="bg-yellow-500"
-        priceColor="text-yellow-400"
+        statusColor="bg-purple-500"
+        priceColor="text-purple-400"
         category="restoration"
-        categoryColor="bg-yellow-500"
+        categoryColor="bg-purple-500"
         categoryLabel="Restauración"
         buttonText="Ver Más"
         buttonType="secondary"
@@ -113,14 +113,14 @@ import CarCard from './CarCard.astro';
         image="/custom_supra.png"
         title="Supra Tokyo Drift"
         series="Tokyo Drift"
-        price="$89.99"
-        description="Inspirado en Fast & Furious. Custom premium único."
+        price="$1,710 MXN"
+        description="Inspirado en Fast & Furious. Proyecto de tuning premium único."
         status="DISPONIBLE"
         statusColor="bg-green-500"
-        priceColor="text-purple-400"
+        priceColor="text-orange-400"
         category="custom"
-        categoryColor="bg-purple-500"
-        categoryLabel="Custom"
+        categoryColor="bg-orange-500"
+        categoryLabel="Tuning"
         buttonText="Comprar"
         buttonType="primary"
         hoverButtonText="Ver Detalles"
@@ -131,15 +131,15 @@ import CarCard from './CarCard.astro';
         image="/lambo_huracan.png"
         title="Lamborghini Huracán"
         series="Treasure Hunt"
-        price="$25.99"
+        price="$799 MXN"
         description="Super Treasure Hunt Edition. Pieza de colección exclusiva."
         status="ÚLTIMO"
         statusColor="bg-red-500"
-        priceColor="text-indigo-400"
+        priceColor="text-red-400"
         category="collection"
-        categoryColor="bg-indigo-500"
-        categoryLabel="Colección"
-        buttonText="Agregar"
+        categoryColor="bg-red-500"
+        categoryLabel="Agotado"
+        buttonText="Al Garaje"
         buttonType="secondary"
         hoverButtonText="Ver Detalles"
       />
@@ -150,11 +150,11 @@ import CarCard from './CarCard.astro';
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
         <div class="stat-item">
           <div class="text-4xl lg:text-5xl font-hotwheels font-bold text-orange-400 mb-2">500+</div>
-          <div class="text-gray-300 font-medium">Modelos en Stock</div>
+          <div class="text-gray-300 font-medium">Autos en Stock</div>
         </div>
         <div class="stat-item">
           <div class="text-4xl lg:text-5xl font-hotwheels font-bold text-blue-400 mb-2">200+</div>
-          <div class="text-gray-300 font-medium">Customs Realizados</div>
+          <div class="text-gray-300 font-medium">Proyectos de Tuning</div>
         </div>
         <div class="stat-item">
           <div class="text-4xl lg:text-5xl font-hotwheels font-bold text-green-400 mb-2">150+</div>
@@ -170,18 +170,16 @@ import CarCard from './CarCard.astro';
     <!-- CTA Section -->
     <div class="text-center bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl p-12 text-white">
       <h3 class="font-hotwheels text-3xl lg:text-4xl font-bold mb-4">
-        ¿No encuentras lo que buscas?
+        ¿No encuentras el auto que buscas?
       </h3>
       <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-        Contáctanos para solicitudes especiales, customs únicos o si tienes alguna pregunta sobre nuestra colección
+        Contáctanos para solicitudes especiales, proyectos de tuning únicos o si tienes alguna pregunta sobre nuestro showroom
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <button class="bg-gray-800 text-orange-400 font-bold py-4 px-8 rounded-xl hover:bg-gray-700 hover:text-orange-300 transition-all duration-200 transform hover:scale-105 border border-orange-400">
-          💬 Contactar Ahora
-        </button>
-        <button class="border-2 border-white text-white font-bold py-4 px-8 rounded-xl hover:bg-white hover:text-orange-500 transition-all duration-200 transform hover:scale-105">
-          📱 WhatsApp
-        </button>
+        <a href="https://wa.me/525565614899?text=¡Hola!%20Me%20interesa%20conocer%20más%20sobre%20sus%20HotWheels%20y%20proyectos%20de%20tuning.%20¿Podrían%20ayudarme?" target="_blank" class="border-2 border-white text-white font-bold py-4 px-8 rounded-xl hover:bg-white hover:text-orange-500 transition-all duration-200 transform hover:scale-105 flex items-center gap-2">
+          <img src="/ic_whatsapp.png" alt="WhatsApp" class="w-6 h-6">
+          WhatsApp Directo
+        </a>
       </div>
     </div>
   </div>
@@ -323,7 +321,7 @@ import CarCard from './CarCard.astro';
   }
 
   .filter-btn {
-    padding: var(--space-sm) var(--space-lg);
+    /* padding: var(--space-sm) var(--space-lg); */
     background: transparent;
     border: 2px solid var(--light-gray);
     color: var(--light-gray);
