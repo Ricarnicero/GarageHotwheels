@@ -1,0 +1,61 @@
+---
+export interface Props {
+  image: string;
+  title: string;
+  series: string;
+  price: string;
+  description: string;
+  status: string;
+  statusColor: string;
+  priceColor: string;
+  category: 'collection' | 'custom' | 'restoration';
+  categoryColor: string;
+  categoryLabel: string;
+  buttonText: string;
+  buttonType?: 'primary' | 'secondary';
+  hoverButtonText: string;
+}
+
+const {
+  image,
+  title,
+  series,
+  price,
+  description,
+  status,
+  statusColor,
+  priceColor,
+  category,
+  categoryColor,
+  categoryLabel,
+  buttonText,
+  buttonType = 'secondary',
+  hoverButtonText
+} = Astro.props;
+---
+
+<div class="gallery-item opacity-100 transform scale-100 transition-all duration-500" data-category={category}>
+  <div class="card-hotwheels group">
+    <!-- Car Image Container -->
+    <div class="relative h-70 rounded-t-xl overflow-hidden" style={`background: url('${image}'); background-size: cover; background-position: center;`}>
+
+      <!-- Status Badge -->
+      <div class={`absolute top-3 right-3 text-white px-3 py-1 rounded-full text-xs font-bold ${categoryColor}`}>
+        {categoryLabel}
+      </div>
+    </div>
+    
+    <!-- Card Content -->
+    <div class="p-6 bg-gray-800">
+      <div class="flex justify-between items-start mb-3">
+        <div>
+            <h3 class="font-hotwheels text-xl font-bold text-white">{title}</h3>
+          <div class="text-sm opacity-90">{series}</div>
+
+        </div>
+        <span class={`text-2xl font-bold ${priceColor}`}>{price}</span>
+      </div>
+      <p class="text-gray-300 mb-4">{description}</p>
+    </div>
+  </div>
+</div>

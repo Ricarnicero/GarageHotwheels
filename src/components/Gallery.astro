@@ -1,0 +1,755 @@
+---
+import CarCard from './CarCard.astro';
+---
+
+<section id="galeria" class="section-hotwheels bg-gray-900">
+  <div class="container-hotwheels">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full text-sm font-semibold mb-6">
+        🎨 Nuestra Galería
+      </div>
+      <h2 class="font-hotwheels text-4xl lg:text-5xl font-bold text-white mb-6">
+        Explora nuestra 
+        <span class="text-hotwheels-gradient">colección exclusiva</span>
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        Desde ediciones limitadas hasta customs únicos, descubre la pasión por los HotWheels
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <button class="filter-btn active bg-orange-500 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105" data-filter="all">
+        Todos
+      </button>
+      <button class="filter-btn bg-gray-800 border-2 border-gray-600 text-gray-300 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:text-blue-400" data-filter="collection">
+        Colección
+      </button>
+      <button class="filter-btn bg-gray-800 border-2 border-gray-600 text-gray-300 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:border-orange-500 hover:text-orange-400" data-filter="custom">
+        Custom
+      </button>
+      <button class="filter-btn bg-gray-800 border-2 border-gray-600 text-gray-300 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:border-green-500 hover:text-green-400" data-filter="restoration">
+        Restauración
+      </button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20" id="gallery-grid">
+      <!-- Collection Item 1 -->
+      <CarCard
+        image="/ferrari_f40.png"
+        title="Ferrari F40"
+        series="Red Line Series"
+        price="$15.99"
+        description="Edición limitada Red Line 2024. Perfecto estado de colección."
+        status="EN STOCK"
+        statusColor="bg-green-500"
+        priceColor="text-red-400"
+        category="collection"
+        categoryColor="bg-red-500"
+        categoryLabel="Colección"
+        buttonText="Agregar"
+        buttonType="secondary"
+        hoverButtonText="Ver Detalles"
+      />
+
+      <!-- Custom Item 1 -->
+      <CarCard
+        image="/bmw_m3_custom.png"
+        title="BMW M3 E46"
+        series="Custom Replica"
+        price="$79.99"
+        description="Réplica exacta personalizada del carro real del cliente."
+        status="VENDIDO"
+        statusColor="bg-orange-500"
+        priceColor="text-blue-400"
+        category="custom"
+        categoryColor="bg-orange-500"
+        categoryLabel="Custom"
+        buttonText="Ordenar Similar"
+        buttonType="primary"
+        hoverButtonText="Ver Proceso"
+      />
+
+      <!-- Collection Item 2 -->
+      <CarCard
+        image="/NissanGTRNismo.png"
+        title="Nissan GT-R Nismo"
+        series="Street Beasts"
+        price="$8.99"
+        description="Street Beasts Series 2023. Excelente calidad y detalles."
+        status="EN STOCK"
+        statusColor="bg-green-500"
+        priceColor="text-green-400"
+        category="collection"
+        categoryColor="bg-green-500"
+        categoryLabel="Colección"
+        buttonText="Agregar"
+        buttonType="secondary"
+        hoverButtonText="Ver Detalles"
+      />
+
+      <!-- Restoration Item -->
+      <CarCard
+        image="/mustang_Boss.png"
+        title="Mustang Boss 429"
+        series="Restoration"
+        price="$45.99"
+        description="Restauración completa de modelo vintage 1970."
+        status="RESTAURADO"
+        statusColor="bg-yellow-500"
+        priceColor="text-yellow-400"
+        category="restoration"
+        categoryColor="bg-yellow-500"
+        categoryLabel="Restauración"
+        buttonText="Ver Más"
+        buttonType="secondary"
+        hoverButtonText="Antes/Después"
+      />
+
+      <!-- Custom Item 2 -->
+      <CarCard
+        image="/custom_supra.png"
+        title="Supra Tokyo Drift"
+        series="Tokyo Drift"
+        price="$89.99"
+        description="Inspirado en Fast & Furious. Custom premium único."
+        status="DISPONIBLE"
+        statusColor="bg-green-500"
+        priceColor="text-purple-400"
+        category="custom"
+        categoryColor="bg-purple-500"
+        categoryLabel="Custom"
+        buttonText="Comprar"
+        buttonType="primary"
+        hoverButtonText="Ver Detalles"
+      />
+
+      <!-- Collection Item 3 -->
+      <CarCard
+        image="/lambo_huracan.png"
+        title="Lamborghini Huracán"
+        series="Treasure Hunt"
+        price="$25.99"
+        description="Super Treasure Hunt Edition. Pieza de colección exclusiva."
+        status="ÚLTIMO"
+        statusColor="bg-red-500"
+        priceColor="text-indigo-400"
+        category="collection"
+        categoryColor="bg-indigo-500"
+        categoryLabel="Colección"
+        buttonText="Agregar"
+        buttonType="secondary"
+        hoverButtonText="Ver Detalles"
+      />
+    </div>
+
+    <!-- Stats Section -->
+    <div class="bg-gray-800 rounded-3xl p-8 lg:p-12 mb-20 shadow-lg border border-gray-700">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="stat-item">
+          <div class="text-4xl lg:text-5xl font-hotwheels font-bold text-orange-400 mb-2">500+</div>
+          <div class="text-gray-300 font-medium">Modelos en Stock</div>
+        </div>
+        <div class="stat-item">
+          <div class="text-4xl lg:text-5xl font-hotwheels font-bold text-blue-400 mb-2">200+</div>
+          <div class="text-gray-300 font-medium">Customs Realizados</div>
+        </div>
+        <div class="stat-item">
+          <div class="text-4xl lg:text-5xl font-hotwheels font-bold text-green-400 mb-2">150+</div>
+          <div class="text-gray-300 font-medium">Restauraciones</div>
+        </div>
+        <div class="stat-item">
+          <div class="text-4xl lg:text-5xl font-hotwheels font-bold text-purple-400 mb-2">98%</div>
+          <div class="text-gray-300 font-medium">Satisfacción</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="text-center bg-gradient-to-r from-orange-500 to-red-500 rounded-3xl p-12 text-white">
+      <h3 class="font-hotwheels text-3xl lg:text-4xl font-bold mb-4">
+        ¿No encuentras lo que buscas?
+      </h3>
+      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+        Contáctanos para solicitudes especiales, customs únicos o si tienes alguna pregunta sobre nuestra colección
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <button class="bg-gray-800 text-orange-400 font-bold py-4 px-8 rounded-xl hover:bg-gray-700 hover:text-orange-300 transition-all duration-200 transform hover:scale-105 border border-orange-400">
+          💬 Contactar Ahora
+        </button>
+        <button class="border-2 border-white text-white font-bold py-4 px-8 rounded-xl hover:bg-white hover:text-orange-500 transition-all duration-200 transform hover:scale-105">
+          📱 WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-orange-500', 'text-white');
+          b.classList.add('bg-gray-800', 'border-2', 'border-gray-600', 'text-gray-300');
+        });
+        
+        // Add active class to clicked button
+        btn.classList.remove('bg-gray-800', 'border-2', 'border-gray-600', 'text-gray-300');
+        btn.classList.add('active', 'bg-orange-500', 'text-white');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          
+          if (filter === 'all' || filter === category) {
+            item.classList.remove('opacity-0', 'scale-75');
+            item.classList.add('opacity-100', 'scale-100');
+          } else {
+            item.classList.remove('opacity-100', 'scale-100');
+            item.classList.add('opacity-0', 'scale-75');
+          }
+        });
+      });
+    });
+
+    // Animate stats on scroll
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const statNumbers = entry.target.querySelectorAll('.stat-item div:first-child');
+          statNumbers.forEach(stat => {
+            const finalValue = stat.textContent || '';
+            const isPercentage = finalValue.includes('%');
+            const numericValue = parseInt(finalValue.replace(/[^\d]/g, ''));
+            
+            let currentValue = 0;
+            const increment = numericValue / 50; // 50 steps
+            
+            const timer = setInterval(() => {
+              currentValue += increment;
+              if (currentValue >= numericValue) {
+                stat.textContent = finalValue;
+                clearInterval(timer);
+              } else {
+                stat.textContent = Math.floor(currentValue) + (isPercentage ? '%' : '+');
+              }
+            }, 30);
+          });
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const statsSection = document.querySelector('.bg-gray-800.rounded-3xl');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+  });
+</script>
+
+<style>
+  .gallery {
+    padding: var(--space-2xl) 0;
+    background: var(--deep-black);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gallery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 98px,
+      rgba(0, 255, 255, 0.05) 100px,
+      rgba(0, 255, 255, 0.05) 102px
+    );
+    animation: racing-stripes 25s linear infinite;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .section-title {
+    font-family: var(--font-primary);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: var(--space-md);
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: var(--light-gray);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Gallery Filters */
+  .gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: var(--space-sm) var(--space-lg);
+    background: transparent;
+    border: 2px solid var(--light-gray);
+    color: var(--light-gray);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--neon-gradient);
+    transition: var(--transition-smooth);
+    z-index: -1;
+  }
+
+  .filter-btn:hover::before,
+  .filter-btn.active::before {
+    left: 0;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    color: var(--deep-black);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .gallery-item {
+    opacity: 1;
+    transform: scale(1);
+    transition: var(--transition-smooth);
+  }
+
+  .gallery-item.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+  }
+
+  .item-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--dark-gray);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    transition: var(--transition-smooth);
+  }
+
+  .item-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
+    border-color: var(--neon-blue);
+  }
+
+  .item-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .placeholder-car {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+    color: white;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .collection-car {
+    background: linear-gradient(135deg, var(--racing-orange), var(--electric-green));
+  }
+
+  .custom-car {
+    background: var(--neon-gradient);
+  }
+
+  .restoration-car {
+    background: linear-gradient(135deg, var(--chrome-silver), white);
+    color: var(--deep-black);
+  }
+
+  .car-model {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .car-year {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: var(--space-xs);
+  }
+
+  .item-overlay {
+    padding: var(--space-lg);
+    background: linear-gradient(to top, var(--dark-gray), transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: var(--transition-smooth);
+  }
+
+  .item-container:hover .item-overlay {
+    transform: translateY(0);
+  }
+
+  .item-info {
+    margin-bottom: var(--space-md);
+  }
+
+  .item-title {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--neon-blue);
+  }
+
+  .item-description {
+    font-size: 0.9rem;
+    color: var(--light-gray);
+    margin-bottom: var(--space-sm);
+  }
+
+  .item-price {
+    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--electric-green);
+  }
+
+  .item-badge {
+    display: inline-block;
+    background: var(--racing-orange);
+    color: white;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .view-details {
+    width: 100%;
+    padding: var(--space-sm);
+    background: transparent;
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+  }
+
+  .view-details:hover {
+    background: var(--neon-blue);
+    color: var(--deep-black);
+    box-shadow: 0 0 15px var(--neon-blue);
+  }
+
+  /* Gallery Stats */
+  .gallery-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+    padding: var(--space-xl);
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+  }
+
+  .stat-item {
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: var(--font-primary);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--neon-blue);
+    margin-bottom: var(--space-xs);
+    text-shadow: 0 0 20px currentColor;
+  }
+
+  .stat-label {
+    font-size: 0.9rem;
+    color: var(--light-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+    padding: var(--space-2xl);
+    background: linear-gradient(145deg, var(--dark-gray), var(--light-gray));
+    border-radius: 20px;
+    border: 2px solid var(--neon-blue);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 255, 255, 0.1), transparent);
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .cta-title {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    color: var(--neon-blue);
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-description {
+    font-size: 1.1rem;
+    color: var(--light-gray);
+    margin-bottom: var(--space-xl);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-button {
+    padding: var(--space-md) var(--space-2xl);
+    background: var(--neon-gradient);
+    color: var(--deep-black);
+    border: none;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    font-size: 1.1rem;
+    z-index: 1;
+  }
+
+  .button-glow {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: var(--transition-slow);
+  }
+
+  .cta-button:hover .button-glow {
+    left: 100%;
+  }
+
+  .cta-button:hover {
+    background: var(--racing-gradient);
+    box-shadow: 0 0 30px var(--racing-orange);
+    transform: translateY(-2px);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .gallery-filters {
+      gap: var(--space-sm);
+    }
+
+    .filter-btn {
+      padding: var(--space-xs) var(--space-md);
+      font-size: 0.9rem;
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-lg);
+    }
+
+    .gallery-stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-md);
+      padding: var(--space-lg);
+    }
+
+    .stat-number {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .gallery-stats {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-section {
+      padding: var(--space-lg);
+    }
+
+    .cta-button {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          
+          if (filter === 'all' || filter === category) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // View details button actions
+    document.querySelectorAll('.view-details').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Here you would open a modal or navigate to detail page
+        console.log('View details clicked');
+      });
+    });
+
+    // CTA button action
+    document.querySelector('.cta-button')?.addEventListener('click', () => {
+      document.querySelector('#contacto')?.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Animate stats on scroll
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const statNumbers = entry.target.querySelectorAll('.stat-number');
+          statNumbers.forEach(stat => {
+            const finalValue = stat.textContent;
+            const isPercentage = finalValue.includes('%');
+            const numericValue = parseInt(finalValue.replace(/[^\d]/g, ''));
+            
+            let currentValue = 0;
+            const increment = numericValue / 50; // 50 steps
+            
+            const timer = setInterval(() => {
+              currentValue += increment;
+              if (currentValue >= numericValue) {
+                stat.textContent = finalValue;
+                clearInterval(timer);
+              } else {
+                stat.textContent = Math.floor(currentValue) + (isPercentage ? '%' : '+');
+              }
+            }, 30);
+          });
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const statsSection = document.querySelector('.gallery-stats');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+  });
+</script>
